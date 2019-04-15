@@ -1,3 +1,4 @@
 chessviz
 .*
 !.gitignore
+*.o
