@@ -5,8 +5,7 @@
 #include <vector>
 using namespace std;
 
-int main()
-{
+int main() {
   vector<vector<char>> arr(8, vector<char>(8, ' '));
   init(arr);
   out(arr);
