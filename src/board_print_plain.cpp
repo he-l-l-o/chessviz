@@ -9,7 +9,7 @@ void out(vector<vector<char>> &arr) {
   cout << endl;
   for (unsigned i = 0; i < arr.size(); i++) {
     // cout << "----------------\n";
-    cout << 8 - i;
+    cout << i + 1;
     for (unsigned j = 0; j < arr[0].size(); j++) {
       cout << "|";
       if (arr[i][j] != ' ') {
