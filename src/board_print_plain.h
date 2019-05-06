@@ -3,4 +3,4 @@
 #include <vector>
 using namespace std;
 
-void out(vector<vector<char>> &arr);
+void out(vector<vector<char>>& arr);

@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-void out(vector<vector<char>> &arr) {
+void out(vector<vector<char>>& arr) {
   cout << "  ";
   for (unsigned j = 0; j < arr[0].size(); j++)
     cout << (char)('a' + j) << " ";

@@ -1,7 +1,7 @@
 #include <vector>
 using namespace std;
 
-void init(vector<vector<char>> &arr) {
+void init(vector<vector<char>>& arr) {
   arr[0][0] = 'r';
   arr[0][1] = 'n';
   arr[0][2] = 'b';
