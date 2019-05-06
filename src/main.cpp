@@ -8,7 +8,7 @@ using namespace std;
 int main() {
   vector<vector<char>> arr(8, vector<char>(8, ' '));
   init(arr);
-  while(true){
+  while (true) {
     out(arr);
     read_console(arr);
   }
