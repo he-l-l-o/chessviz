@@ -14,8 +14,8 @@ void read_console(vector<vector<char>>& arr) {
   if (in == "exit") {
     exit(0);
   }
-  if (in[0] >= 'a' && in[0] <= 'h' && in[1] >= '1' && in[1] <= '8' &&
-      in[3] >= 'a' && in[3] <= 'h' && in[4] >= '1' && in[4] <= '8') {
+  if (in[0] >= 'a' && in[0] <= 'h' && in[1] >= '1' && in[1] <= '8'
+      && in[3] >= 'a' && in[3] <= 'h' && in[4] >= '1' && in[4] <= '8') {
     x1 = (int)in[0] - 'a';
     y1 = (int)in[1] - '0' - 1;
     x2 = (int)in[3] - 'a';
