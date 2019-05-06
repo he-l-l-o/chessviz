@@ -2,4 +2,5 @@ chessviz
 .*
 !.gitignore
 !.travis.yml
+!.clang-format
 *.o
