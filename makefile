@@ -1,5 +1,5 @@
-all:prog
-prog:build/main.o build/board_start.o build/board_read.o build/board_print_plain.o
+all:bin/chessviz
+bin/chessviz:build/main.o build/board_start.o build/board_read.o build/board_print_plain.o
 	g++ build/main.o build/board_start.o build/board_read.o build/board_print_plain.o -o bin/chessviz -Wall -Werror
 build/main.o:src/main.cpp
 	g++ -c src/main.cpp -o build/main.o -Wall -Werror
