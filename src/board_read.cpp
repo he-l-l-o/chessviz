@@ -5,10 +5,10 @@
 #include <vector>
 using namespace std;
 
-void read_console(vector<vector<char>>& arr) {
+void read_console(vector<vector<char> >& arr) {
   setlocale(0, "");
   string in;
-  //char t;
+  // char t;
   int x1, x2, y1, y2;
   cin >> in;
   if (in == "exit") {
