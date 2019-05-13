@@ -3,4 +3,5 @@ chessviz
 !.gitignore
 !.travis.yml
 !.clang-format
+!.gitkeep
 *.o
