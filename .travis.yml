@@ -1,4 +1,5 @@
-language: c++
+language: cpp
+compiler: g++
 
 dist: xenial
 
