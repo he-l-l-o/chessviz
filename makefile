@@ -9,3 +9,7 @@ build/board_read.o:src/board_read.cpp
 	g++ -c src/board_read.cpp -o build/board_read.o -Wall -Werror
 build/board_print_plain.o:src/board_print_plain.cpp
 	g++ -c src/board_print_plain.cpp -o build/board_print_plain.o -Wall -Werror
+
+.PHONY: clean
+
+clean rm -rf build/*.o
