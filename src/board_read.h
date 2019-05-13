@@ -3,4 +3,4 @@
 #include <vector>
 using namespace std;
 
-void read_console(vector<vector<char> >& arr);
+void read_console(vector<vector<char>>& arr);

@@ -22,7 +22,7 @@ BraceWrapping:
   AfterClass:      false
   AfterControlStatement: false
   AfterEnum:       false
-  AfterFunction:   false
+  AfterFunction:   true
   AfterNamespace:  false
   AfterStruct:     false
   AfterUnion:      false
@@ -52,7 +52,7 @@ FixNamespaceComments: false
 IncludeBlocks:   Preserve
 IndentCaseLabels: false
 IndentPPDirectives: None
-IndentWidth:     2
+IndentWidth:     4
 IndentWrappedFunctionNames: false
 KeepEmptyLinesAtTheStartOfBlocks: false
 MaxEmptyLinesToKeep: 1
