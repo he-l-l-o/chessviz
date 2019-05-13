@@ -12,4 +12,4 @@ build/board_print_plain.o:src/board_print_plain.cpp
 
 .PHONY: clean
 
-clean rm -rf build/*.o
+clean: rm -rf build/*.o
