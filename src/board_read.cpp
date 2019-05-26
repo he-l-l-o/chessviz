@@ -101,6 +101,13 @@ void board_update(vector< vector< char > >& arr, vector< int >& out, int& color)
             read_console(arr, out, color);
         }
     }
+    if (arr[out[1]][out[0]] != 'N' && arr[out[1]][out[0]] != 'n'
+        && arr[out[1]][out[0]] != 'p' && arr[out[1]][out[0]] != 'P'
+        && arr[out[1]][out[0]] != ' ') {
+        color = 1 - color;
+        arr[out[3]][out[2]] = arr[out[1]][out[0]];
+        arr[out[1]][out[0]] = ' ';
+    }
 }
 
 void read_console(vector< vector< char > >& arr, vector< int >& out, int& color)
