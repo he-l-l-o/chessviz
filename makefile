@@ -13,12 +13,15 @@ build/board_print_plain.o:src/board_print_plain.cpp
 .PHONY: clean test
 
 build/test/test.o:test/test.cpp
-	g++ -c test/test.cpp -o build/test/test.o 
-	#-Wall -Werror
-bin/test:build/test/test.o
-	g++ build/test/test.o -o bin/test 
-	#-Wall -Werror
+	g++ -c test/test.cpp -o build/test/test.o -Wall -Werror
+build/test/board_start.o:src/board_start.cpp
+	g++ -c src/board_start.cpp -o build/test/board_start.o -Wall -Werror
+build/test/board_read.o:src/board_read.cpp
+	g++ -c src/board_read.cpp -o build/test/board_read.o -Wall -Werror
+bin/test:build/test/test.o build/test/board_read.o build/test/board_start.o
+	g++ build/test/test.o build/test/board_read.o build/test/board_start.o -o bin/test -Wall -Werror
 test:bin/test
 
 clean: 
 	rm -rf build/*.o
+	rm -rf build/test/*.o
