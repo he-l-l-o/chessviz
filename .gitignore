@@ -1,4 +1,5 @@
 chessviz
+test
 .*
 !.gitignore
 !.travis.yml
