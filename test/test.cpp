@@ -4,7 +4,7 @@
 #include "../thirdparty/Catch/catch.hpp"
 TEST_CASE("Board initialization")
 {
-    vector<vector<char>> arr(8, vector<char>(8, ' '));
+    vector< vector< char > > arr(8, vector< char >(8, ' '));
     init(arr);
     REQUIRE(arr[2][2] == ' ');
     REQUIRE(arr[0][0] == 'r');
@@ -19,9 +19,9 @@ TEST_CASE("Additional functions")
 }
 TEST_CASE("Board update function")
 {
-    vector<vector<char>> arr(8, vector<char>(8, ' '));
+    vector< vector< char > > arr(8, vector< char >(8, ' '));
     init(arr);
-    vector<int> out(4, 0);
+    vector< int > out(4, 0);
     out[0] = 1;
     out[1] = 1;
     out[2] = 1;

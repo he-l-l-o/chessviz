@@ -5,7 +5,8 @@
 #include <vector>
 using namespace std;
 
-void read_console(vector<vector<char>>& arr, vector<int>& out, int& color);
+void read_console(
+        vector< vector< char > >& arr, vector< int >& out, int& color);
 int is_upper_case(char ch)
 {
     if (ch >= 'A' && ch <= 'Z') {
@@ -20,14 +21,14 @@ int is_lower_case(char ch)
     }
     return 0;
 }
-void error(vector<vector<char>>& arr, vector<int>& out, int& color)
+void error(vector< vector< char > >& arr, vector< int >& out, int& color)
 {
     cout << "Неверный ход\n";
     color = 1 - color;
     read_console(arr, out, color);
 }
 
-void board_update(vector<vector<char>>& arr, vector<int>& out, int& color)
+void board_update(vector< vector< char > >& arr, vector< int >& out, int& color)
 {
     if (arr[out[1]][out[0]] == 'p') {
         color = 1 - color;
@@ -102,7 +103,7 @@ void board_update(vector<vector<char>>& arr, vector<int>& out, int& color)
     }
 }
 
-void read_console(vector<vector<char>>& arr, vector<int>& out, int& color)
+void read_console(vector< vector< char > >& arr, vector< int >& out, int& color)
 {
     setlocale(0, "");
     string in;
