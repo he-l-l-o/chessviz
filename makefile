@@ -10,7 +10,15 @@ build/board_read.o:src/board_read.cpp
 build/board_print_plain.o:src/board_print_plain.cpp
 	g++ -c src/board_print_plain.cpp -o build/board_print_plain.o -Wall -Werror
 
-.PHONY: clean
+.PHONY: clean test
+
+build/test/test.o:test/test.cpp
+	g++ -c test/test.cpp -o build/test/test.o 
+	#-Wall -Werror
+bin/test:build/test/test.o
+	g++ build/test/test.o -o bin/test 
+	#-Wall -Werror
+test:bin/test
 
 clean: 
 	rm -rf build/*.o
